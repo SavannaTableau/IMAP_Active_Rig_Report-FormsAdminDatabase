@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook source-platform='win' version='8.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <!-- build 8200.14.0616.0146                                -->
+  <preferences>
+  </preferences>
+  <datasources>
+    <datasource caption='Rigs (SavannaFormsAdmin)' inline='true' name='sqlserver.41815.402845775461' version='8.3'>
+      <connection authentication='sspi' class='sqlserver' dbname='SavannaFormsAdmin' odbc-native-protocol='yes' server='sesc-blsharesql'>
+        <relation name='Rigs' table='[dbo].[Rigs]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[Rigs]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DivisionID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[DivisionID]</local-name>
+            <parent-name>[Rigs]</parent-name>
+            <remote-alias>DivisionID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RigManagerID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[RigManagerID]</local-name>
+            <parent-name>[Rigs]</parent-name>
+            <remote-alias>RigManagerID</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FieldSupID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[FieldSupID]</local-name>
+            <parent-name>[Rigs]</parent-name>
+            <remote-alias>FieldSupID</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HSESupID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[HSESupID]</local-name>
+            <parent-name>[Rigs]</parent-name>
+            <remote-alias>HSESupID</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RigNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RigNumber]</local-name>
+            <parent-name>[Rigs]</parent-name>
+            <remote-alias>RigNumber</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inactive</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Inactive]</local-name>
+            <parent-name>[Rigs]</parent-name>
+            <remote-alias>Inactive</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_BIT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IsEditable</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[IsEditable]</local-name>
+            <parent-name>[Rigs]</parent-name>
+            <remote-alias>IsEditable</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_BIT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BranchID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[BranchID]</local-name>
+            <parent-name>[Rigs]</parent-name>
+            <remote-alias>BranchID</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DivisionCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DivisionCode]</local-name>
+            <parent-name>[Rigs]</parent-name>
+            <remote-alias>DivisionCode</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Branch ID' datatype='integer' name='[BranchID]' role='dimension' type='ordinal'>
+      </column>
+      <column caption='Division Code' datatype='string' name='[DivisionCode]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Division ID' datatype='integer' name='[DivisionID]' role='dimension' type='ordinal'>
+      </column>
+      <column caption='Field Sup ID' datatype='integer' name='[FieldSupID]' role='dimension' type='ordinal'>
+      </column>
+      <column caption='HSE Sup ID' datatype='integer' name='[HSESupID]' role='dimension' type='ordinal'>
+      </column>
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal'>
+      </column>
+      <column datatype='boolean' name='[Inactive]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Is Editable' datatype='boolean' name='[IsEditable]' role='dimension' type='nominal'>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Rig Manager ID' datatype='integer' name='[RigManagerID]' role='dimension' type='ordinal'>
+      </column>
+      <column caption='Rig Number' datatype='string' name='[RigNumber]' role='dimension' type='nominal'>
+      </column>
+      <column-instance column='[Inactive]' derivation='None' name='[none:Inactive:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Inactive:nk]' type='palette'>
+            <map to='#2ca02c'>
+              <bucket>false</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>true</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <filter class='categorical' column='[DivisionID]' filter-group='2'>
+        <groupfilter function='member' level='[DivisionID]' member='8' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Active Rigs (AUS)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Rigs (SavannaFormsAdmin)' name='sqlserver.41815.402845775461' />
+          </datasources>
+          <datasource-dependencies datasource='sqlserver.41815.402845775461'>
+            <column datatype='boolean' name='[Inactive]' role='dimension' type='nominal'>
+            </column>
+            <column caption='Rig Number' datatype='string' name='[RigNumber]' role='dimension' type='nominal'>
+            </column>
+            <column-instance column='[Inactive]' derivation='None' name='[none:Inactive:nk]' pivot='key' type='nominal' />
+            <column-instance column='[RigNumber]' derivation='None' name='[none:RigNumber:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[sqlserver.41815.402845775461].[none:Inactive:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[sqlserver.41815.402845775461].[none:RigNumber:nk]</rows>
+        <cols></cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Active Rigs (AUS)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[sqlserver.41815.402845775461].[none:Inactive:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[sqlserver.41815.402845775461].[none:Inactive:nk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Active Rigs (AUS)' width='164'>
+      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
+      sSYfAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
